@@ -14,19 +14,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name="first_name")
     private String firstName;
 
-    @Column
+    @Column(name="last_name")
     private String lastName;
 
-    @Column
+    @Column(name="phone_number")
     private String phoneNumber;
 
-    @Column
+    @Column(name="registration_date")
     private LocalDateTime registrationDate;
 
-    @Column
+    @Column(name="last_login_date")
     private Timestamp lastLoginDate;
 
     public Long getId() {
